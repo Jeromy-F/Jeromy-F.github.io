@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="resources/Asset_4.png" type="image/png">
+    <title>SHOOTING GALLERY</title>
+</head>
+<body>
+    <!-- Main Menu Content -->
+    <div id="mainMenu">
+        <h1>SHOOTING GALLERY</h1>
+        <button id="startButton">Start Game</button>
+        <button id="muteButton">Mute</button><br>
+        <input type="text" id="userNick" placeholder="Enter your name! (2-20 characters)">
+        <p>Your gun will follower the cursor vertically.<br><br>
+        Left mouse = Fire Bullet<br><br>
+        Don't let the targets reach the fail line!<br><br><br>
+        Programmed and designed by Jeromy William Frase <br>
+        Music: There is Wi-Fi at the Peak of Kilimanjaro, Aldous Ichnite, Free Music Archive, CC BY-NC <br>
+        sfx: 357 Magnum Revolver Gunshot, Shark_Anthony, freesound.org, Creative Commons 0<br>
+        Art: Melanie Slesnick, <a href="melanieslesnick@gmail.com">melanieslesnick@gmail.com</a>, Commissioned</p>
+        <audio id="backgroundMusic" Loop>
+            <source src="resources/Aldous Ichnite - There is Wi-Fi at the Peak of Kilimanjaro.mp3" type="audio/mpeg">
+            Your browser does not support this audio element.
+        </audio>
+    </div>
+    <!-- Game Content -->
+    <div id="gameContainer">
+        <audio id="gunShot">
+            <source src="resources/683186__shark_anthony__357-magnum-revolver-gunshot.mp3" type="audio/mpeg">
+            Your browser does not support this audio element.
+        </audio>
+        <div id="gun"></div>
+        <div id="altTarget"></div>
+        <div id="failLine"></div>
+        <span id="scoreText">Score: 0</span>
+        <span id="waveText">Wave: 0</span>
+    </div>
+    <!-- Game Over Content -->
+    <div id="gameOverScreen">
+        <h1>GAME OVER</h1>
+        <span id="thankYou">Thank you for playing!</span>
+        <span id="scoreFinalText">Final Score: 0</span>
+        <button id="restartButton">Back to Menu?</button>
+        <h2>Leaderboard</h2>
+        <ol id="leaderboardList"></ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
